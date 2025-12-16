@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alana Varian</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">Alana<span>Varian</span></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Halo, Saya <span>Alana Varian</span></h2>
+            <p>Mahasiswa Teknologi Informasi | Web Developer</p>
+            <button onclick="scrollToSection('contact')">Hubungi Saya</button>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-text">
+            Saya adalah mahasiswa Teknologi Informasi Universitas Pamulang yang memiliki minat
+            di bidang Web Development, UI/UX, dan Sistem Informasi.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section bg-light">
+        <h2 class="section-title">Skill</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">PostgreSQL</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Project</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Aplikasi Hitung Nilai Mahasiswa</h3>
+                <p>Web app untuk menghitung nilai dengan dashboard interaktif.</p>
+            </div>
+            <div class="project-card">
+                <h3>Sistem Rekomendasi Vila</h3>
+                <p>Website rekomendasi vila berbasis filter lokasi dan harga.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-dark">
+        <h2 class="section-title text-white">Kontak</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nama" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Alana Varian | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
